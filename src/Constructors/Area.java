@@ -8,6 +8,8 @@ The class has three constructors which are :
 Now, create objects of the 'Rectangle' class having none, one and two parameters and print their areas.
 */
 
+package Constructors;
+
 import java.io.*;
 class Rectangle
 {
