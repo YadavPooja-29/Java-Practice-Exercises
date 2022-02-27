@@ -8,6 +8,7 @@ Now make two constructors of this class as follows:
 Create object of the 'AddAmount' class and display the final amount in Piggie Bank.
 */
 
+package Constructors;
 
 import java.io.*;
 class AddAmount
