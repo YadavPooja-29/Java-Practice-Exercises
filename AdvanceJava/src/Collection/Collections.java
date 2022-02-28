@@ -53,3 +53,73 @@ public class Main
 		System.out.println("Min: " + findMin(list));
 	}
 }
+
+//SORTING ON COLLECTIONS
+
+/*
+Exercise 1: Modify above program to sort the list in reverse order.
+*/
+
+
+import java.util.*; 
+class Main 
+{ 
+    public static void main(String args[])
+    { 
+        ArrayList<String> al=new ArrayList<String>(); 
+        al.add("Viru"); 
+        al.add("Saurav"); 
+        al.add("Mukesh"); 
+        al.add("Tahir"); 
+     
+        Collections.reverseOrder(); 
+        Iterator itr=al.iterator(); 
+        while(itr.hasNext())
+        { 
+            System.out.println(itr.next()); 
+        } 
+    } 
+}
+
+
+/*
+Exercise 2: Modify above program to sort the list in reverse order without using Collections.reverseOrder() method.
+*/
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        ArrayList al = new ArrayList();
+        al.add("Viru"); 
+        al.add("Saurav"); 
+        al.add("Mukesh"); 
+        al.add("Tahir"); 
+        System.out.println("Unsorted Arraylist:");
+        System.out.println(al);
+         int count = al.size();
+        String temp;
+        Object[] name = al.toArray();
+        for (int i = 0; i < count; i++)
+        {
+            for (int j = i + 1; j < count; j++)
+            {
+                if (((String) name[i]).compareTo((String) name[j]) > 0)
+                {
+                    temp = (String) name[i];
+                    name[i] = name[j];
+                    name[j] = temp;
+                }
+            }
+        }
+        System.out.println("\nSorted Arraylist:");
+        for (int a = 0; a < name.length; a++)
+        {
+            System.out.println(name[a]);
+        }
+    }
+}
