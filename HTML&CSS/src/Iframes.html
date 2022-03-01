@@ -1,0 +1,80 @@
+<!-- 
+Exercise 1: Create an iframe with a URL address that goes to https://www.google.com.
+-->
+//Iframes.html
+<html>
+  <head>
+    <title> HTML Iframe </title>
+  </head>
+<body>
+
+<h2>HTML Iframes</h2>
+<p>Iframe: It is used to display Webpage within Webpage</p>
+<iframe src="https://www.google.com" height="200" width="300">Google</iframe>
+
+</body>
+</html>
+
+//Demo.html
+<html>
+  <head>
+    <title> HTML Iframe </title>
+  </head>
+<body>
+
+<iframe src="Iframes.html" name="iframe_a"><a href="https://www.google.com" target="iframe_a">Google.com</a></iframe>
+
+</body>
+</html>
+
+
+<!--
+Exercise 2: Set the width of the iframe to 500 pixels.
+-->
+
+<html>
+  <head>
+    <title> HTML Iframe </title>
+  </head>
+<body>
+
+<iframe src="Iframes.html" height="200" width="500" name="iframe_a"><a href="https://www.google.com" target="iframe_a">Google.com</a></iframe>
+
+</body>
+</html>
+
+
+
+<!--
+Exercise 3: Remove the border from the iframe.
+-->
+
+<html>
+  <head>
+    <title> HTML Iframe </title>
+  </head>
+<body>
+
+<h2>HTML Iframes</h2>
+<p>Iframe: It is used to display Webpage within Webpage</p>
+<iframe src="Iframes.html" style="border:none;" name="iframe_a"><a href="https://www.google.com" target="iframe_a">Google.com</a></iframe>
+
+</body>
+</html>
+
+
+<!--
+Exercsie 4: Change the color of the iframe's border to red.
+-->
+
+<html>
+  <head>
+    <title> HTML Iframe </title>
+  </head>
+<body>
+
+<iframe src="Iframes.html" height="200" width="500" style="border-color:red;" name="iframe_a"><a href="https://www.google.com" target="iframe_a">Google.com</a></iframe>
+
+</body>
+</html>
+
