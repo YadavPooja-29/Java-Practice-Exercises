@@ -1,0 +1,72 @@
+<!--
+Exercise 5: Create a page same as the search page on google. Go to www.google.com in the text box enter Java and search. 
+-->
+
+<!DOCTYPE html>
+<html>
+<style>
+	*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: arial, sans-serif;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height:100vh;
+	margin-top: 107px;
+}
+
+.s-box {
+	width:580px;
+	margin: 0px auto;
+	position: relative;
+	margin-top: -8px;
+	text-align: center;
+}
+.s-box .s-input{
+	display: block;
+	border:1px solid #ddd;
+	color: rgba(0,0,0, 0.87);
+	font-size: 16px;
+	padding: 13px;
+	padding-left: 45px;
+	border-radius: 25px;
+	width: 100%;
+	transition: box-shadow 100ms;
+	outline: none;
+}
+
+
+.s-btn {
+	border: 1px solid transparent;
+	padding: 9px 15px;
+	color: #666;
+	font-size: 14px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 28px;
+	outline: none;
+	cursor: pointer;
+	transition: border-color 100ms;
+}
+
+	
+</style>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search</title>
+</head> 
+<body>
+
+	<form action="http://google.com" method="get" target="_blank"><br><br>
+		<div class="s-box">
+			<input type="text" class="s-input" name="q" id="q" placeholder="Search"/>
+			<input type="submit" class="s-btn" value="Google Search">
+		</div>
+	</form>
+</body>
+</html>
