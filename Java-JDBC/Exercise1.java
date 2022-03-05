@@ -11,7 +11,7 @@ public class Exercise1
 {		
 	static final String url ="jdbc:mysql://localhost/JDBCExamples";
 	static final String user = "root";
-	static final String password = "yes ";	 
+	static final String password = "root ";	 
 	public static void main(String[] args) throws SQLException
 	{
 		Connection conn = DriverManager.getConnection(url, user,password);
